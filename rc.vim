@@ -36,7 +36,6 @@ Plug 'fatih/vim-go'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-fugitive'
-Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
