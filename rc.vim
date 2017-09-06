@@ -7,6 +7,9 @@ set relativenumber
 
 set autoindent
 
+set t_Co=256
+hi Normal ctermbg=none
+
 let g:netrw_bufsettings = 'nu relativenumber'
 let mapleader = ","
 let g:rehash256 = 1
@@ -24,6 +27,8 @@ let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 let g:go_metalinter_autosave = 1
 let g:go_metalinter_autosave_enabled = ['vet', 'golint']
 
+let g:NERDSpaceDelims=1
+
 set autowrite
 
 autocmd FileType go nmap <leader>b <Plug>(go-build)
@@ -36,9 +41,15 @@ Plug 'fatih/vim-go'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdcommenter'
 call plug#end()
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 set colorcolumn=80,100,120
+
+:set guioptions-=m
+:set guioptions-=T
+:set guioptions-=r
+:set guioptions-=L
 
